@@ -53,7 +53,7 @@
                         android:layout_width="186dp"
                         android:layout_height="36dp"
                         android:layout_marginTop="28dp"
-                        android:rating="@{(float)movie.rating}"
+                        android:rating="@{(float) movie.rating / 2}"
                         app:layout_constraintEnd_toEndOf="@+id/tv_rating"
                         app:layout_constraintTop_toTopOf="@+id/tv_rating" />
 
@@ -75,7 +75,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitXY"
-                android:src="@{movie.mediumCoverImage}"
+                app:mediumCoverImage="@{movie.mediumCoverImage}"
                 app:riv_border_color="#FFFFFF"
                 app:riv_border_width="2dip"
                 app:riv_corner_radius="20dip"
